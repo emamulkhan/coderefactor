@@ -40,6 +40,8 @@ class LanguageFile
 		}
 		if (!$error) {
 			PrintMsg::displayMsg("Application language PHPs generated.\n");
+			//below line is for execution of test case
+			return "file generated";
 		} else {
 			PrintMsg::displayMsg("Error during language PHPs generation.\n");
 		}

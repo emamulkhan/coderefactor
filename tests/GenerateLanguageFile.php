@@ -9,4 +9,12 @@ class GenerateLanguageFile extends PHPUnit_Framework_TestCase
 		$lang_t = $lang->generateLanguageFiles();
 		$this->assertEquals($lang_t, "file generated");
 	}
+
+	public function testGenerateApplet() 
+    {
+		$applet   = new \Language\LanguageApplet();
+		$applet_1 = $applet->generateAppletLanguageXmlFiles();
+		$this->assertEquals($applet_1, "applet xml file generated");
+	}
+
 }

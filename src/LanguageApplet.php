@@ -53,9 +53,13 @@ class LanguageApplet
 				if (!$error) {
 					PrintMsg::displayMsg("\t[XML CACHED: ".$appletLanguageId."] "
 						."OK");
+					//below line is for execution of test case
+					return "applet xml file generated";
 				} else {
 					PrintMsg::displayMsg("\t[XML CACHED: ".$appletLanguageId."] "
 						."NOK");
+					//below line is for execution of test case
+					return "applet xml file generation failed";
 				}
 			}
 		} catch (\Exception $e) {
