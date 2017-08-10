@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 use Language;
-class GenerateLanguageFile extends \PHPUnit_Framework_TestCase
+class GenerateLanguageFile extends PHPUnit_Framework_TestCase
 {
     public function testGenerateLanguageFile() 
     {
